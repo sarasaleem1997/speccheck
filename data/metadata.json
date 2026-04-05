@@ -1,0 +1,244 @@
+{
+  "use_case_weights": {
+    "Laptops": {
+      "Work & productivity": {
+        "cpu_norm": 0.25,
+        "battery_norm": 0.25,
+        "weight_norm": 0.15,
+        "display_norm": 0.15,
+        "gpu_norm": 0.05,
+        "ram_norm": 0.15
+      },
+      "Creative work": {
+        "cpu_norm": 0.2,
+        "display_norm": 0.25,
+        "gpu_norm": 0.25,
+        "ram_norm": 0.15,
+        "battery_norm": 0.1,
+        "weight_norm": 0.05
+      },
+      "Gaming": {
+        "gpu_norm": 0.35,
+        "cpu_norm": 0.25,
+        "display_norm": 0.2,
+        "battery_norm": 0.05,
+        "ram_norm": 0.15
+      },
+      "University": {
+        "battery_norm": 0.25,
+        "weight_norm": 0.25,
+        "price_norm": 0.25,
+        "cpu_norm": 0.15,
+        "display_norm": 0.1
+      },
+      "Travel & portability": {
+        "weight_norm": 0.3,
+        "battery_norm": 0.3,
+        "cpu_norm": 0.15,
+        "display_norm": 0.1,
+        "price_norm": 0.15
+      },
+      "Programming": {
+        "cpu_norm": 0.25,
+        "display_norm": 0.25,
+        "ram_norm": 0.2,
+        "battery_norm": 0.15,
+        "gpu_norm": 0.05,
+        "weight_norm": 0.1
+      }
+    },
+    "Smartphones": {
+      "Everyday use": {
+        "cpu_norm": 0.2,
+        "battery_norm": 0.25,
+        "display_norm": 0.2,
+        "gpu_norm": 0.15,
+        "price_norm": 0.2
+      },
+      "Photography": {
+        "gpu_norm": 0.4,
+        "display_norm": 0.25,
+        "cpu_norm": 0.2,
+        "battery_norm": 0.15
+      },
+      "Gaming": {
+        "cpu_norm": 0.3,
+        "gpu_norm": 0.3,
+        "display_norm": 0.2,
+        "battery_norm": 0.1,
+        "ram_norm": 0.1
+      },
+      "Business": {
+        "cpu_norm": 0.2,
+        "battery_norm": 0.25,
+        "display_norm": 0.2,
+        "ram_norm": 0.15,
+        "price_norm": 0.2
+      },
+      "Long battery life": {
+        "battery_norm": 0.5,
+        "price_norm": 0.2,
+        "cpu_norm": 0.15,
+        "display_norm": 0.15
+      },
+      "Value for money": {
+        "price_norm": 0.35,
+        "battery_norm": 0.25,
+        "cpu_norm": 0.2,
+        "display_norm": 0.2
+      }
+    },
+    "Headphones": {
+      "Music & hi-fi": {
+        "display_norm": 0.4,
+        "cpu_norm": 0.2,
+        "battery_norm": 0.2,
+        "price_norm": 0.2
+      },
+      "Office calls": {
+        "cpu_norm": 0.35,
+        "display_norm": 0.25,
+        "battery_norm": 0.2,
+        "weight_norm": 0.2
+      },
+      "Travel & commute": {
+        "cpu_norm": 0.3,
+        "battery_norm": 0.25,
+        "weight_norm": 0.25,
+        "display_norm": 0.2
+      },
+      "Gaming": {
+        "cpu_norm": 0.3,
+        "display_norm": 0.3,
+        "battery_norm": 0.2,
+        "price_norm": 0.2
+      },
+      "Gym & sport": {
+        "weight_norm": 0.35,
+        "battery_norm": 0.25,
+        "cpu_norm": 0.2,
+        "price_norm": 0.2
+      },
+      "Casual listening": {
+        "price_norm": 0.35,
+        "display_norm": 0.3,
+        "battery_norm": 0.2,
+        "cpu_norm": 0.15
+      }
+    },
+    "Monitors": {
+      "Design & color work": {
+        "display_norm": 0.5,
+        "cpu_norm": 0.25,
+        "price_norm": 0.25
+      },
+      "Gaming": {
+        "cpu_norm": 0.4,
+        "display_norm": 0.35,
+        "price_norm": 0.25
+      },
+      "Office & coding": {
+        "display_norm": 0.35,
+        "cpu_norm": 0.25,
+        "weight_norm": 0.15,
+        "price_norm": 0.25
+      },
+      "Home cinema": {
+        "display_norm": 0.45,
+        "cpu_norm": 0.2,
+        "weight_norm": 0.1,
+        "price_norm": 0.25
+      },
+      "Content creation": {
+        "display_norm": 0.45,
+        "cpu_norm": 0.25,
+        "ram_norm": 0.05,
+        "price_norm": 0.25
+      }
+    }
+  },
+  "budget_ranges": {
+    "Laptops": {
+      "Under $800": [
+        0,
+        800
+      ],
+      "$800-$1,400": [
+        800,
+        1400
+      ],
+      "$1,400-$2,000": [
+        1400,
+        2000
+      ],
+      "No limit": [
+        0,
+        99999
+      ]
+    },
+    "Smartphones": {
+      "Under $400": [
+        0,
+        400
+      ],
+      "$400-$800": [
+        400,
+        800
+      ],
+      "$800-$1,200": [
+        800,
+        1200
+      ],
+      "No limit": [
+        0,
+        99999
+      ]
+    },
+    "Headphones": {
+      "Under $150": [
+        0,
+        150
+      ],
+      "$150-$300": [
+        150,
+        300
+      ],
+      "$300+": [
+        300,
+        99999
+      ],
+      "No limit": [
+        0,
+        99999
+      ]
+    },
+    "Monitors": {
+      "Under $400": [
+        0,
+        400
+      ],
+      "$400-$800": [
+        400,
+        800
+      ],
+      "$800+": [
+        800,
+        99999
+      ],
+      "No limit": [
+        0,
+        99999
+      ]
+    }
+  },
+  "feature_cols": [
+    "cpu_norm",
+    "gpu_norm",
+    "display_norm",
+    "battery_norm",
+    "weight_norm",
+    "ram_norm",
+    "price_norm",
+    "pos_pct"
+  ]
+}

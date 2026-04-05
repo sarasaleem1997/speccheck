@@ -1,0 +1,21 @@
+# API keys — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# Data (large files — regenerate with: python pipeline/build_dataset.py)
+# Uncomment these if using Git LFS or want to keep the repo lean:
+# model/*.pkl
+# data/*.parquet
