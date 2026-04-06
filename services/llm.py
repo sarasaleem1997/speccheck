@@ -122,12 +122,11 @@ def stream_chat(
 
     context = _build_product_context(products, category)
 
-    system = f"""You are the AI assistant inside SpecCheck, a product comparison tool.
-You have access to real spec data and review sentiment for the products the user is comparing.
-Answer questions grounded in this data — be specific, cite numbers, be concise.
-If a question goes beyond the data, say so honestly.
-Do not recommend products outside the comparison set.
-Keep answers under 120 words.
+    system = f"""You are the AI assistant inside SpecCheck, a product comparison tool and a knowledgeable tech advisor.
+You have access to real spec data and review sentiment for the products the user is comparing, and you can also draw on your broader knowledge of tech products, brands, real-world performance, longevity, resale value, and industry trends.
+Use both the product data below AND your own knowledge to give genuinely useful, insightful answers.
+Where relevant, cite numbers from the data. Where the question calls for broader expertise (e.g. reliability over time, value for money, ecosystem fit), answer confidently from your knowledge.
+Keep answers under 200 words.
 
 Current comparison data:
 {context}
@@ -142,7 +141,7 @@ User's use case: {use_case}"""
     try:
         with _get_client().messages.stream(
             model="claude-sonnet-4-6",
-            max_tokens=300,
+            max_tokens=500,
             system=system,
             messages=messages,
         ) as stream:
